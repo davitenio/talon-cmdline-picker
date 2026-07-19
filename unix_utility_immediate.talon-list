@@ -1,0 +1,18 @@
+list: user.unix_utility_immediate
+-
+
+brew update
+brew upgrade
+dig
+disk free human: df -h
+disk free: df
+harp top: htop
+I D user: id -u
+I D: id
+lisa dot dot | lisa double dot: ls ..
+lisa li: ls -l
+lisa triple dot: ls ../..
+open dot: open .
+who
+who am I: whoami
+work dear: pwd
