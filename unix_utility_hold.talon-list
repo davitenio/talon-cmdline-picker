@@ -54,12 +54,12 @@ sort unique: sort -u
 stat
 tea append: tee -a
 tea: tee
-touch 
-translate delete: tr -d 
-translate: tr 
-unique count: uniq -c 
-unique: uniq 
-vim: vim 
-word count characters: wc -c 
-word count lines: wc -l 
+touch
+translate delete: tr -d
+translate: tr
+unique count: uniq -c
+unique: uniq
+vim: vim
+word count characters: wc -c
+word count lines: wc -l
 word count: wc
