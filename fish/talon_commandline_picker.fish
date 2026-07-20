@@ -1,6 +1,6 @@
 if status is-interactive
 
-    # --------------------------------------------------------
+	# --------------------------------------------------------
 	# Shared variables used by the Talon fuzzy finder workflow.
 	#
 	# Talon sets these variables before pressing Ctrl-G.
@@ -20,7 +20,7 @@ if status is-interactive
 	set -U FUZZY_WHERE ""
 	set -U FUZZY_WHAT "f"
 
-    function fuzzy_dispatch
+	function fuzzy_dispatch
 		set -l target $PWD
 		switch $FUZZY_WHERE
 			case home;      set target $HOME
@@ -31,12 +31,12 @@ if status is-interactive
 			case root;      set target /
 		end
 
-        set -l ftype f
+		set -l ftype f
 		if test "$FUZZY_WHAT" = "dir"
 			set ftype d
 		end
 
-        set -l result (fd . $target --type $ftype 2>/dev/null \
+		set -l result (fd . $target --max-depth 1 --type $ftype 2>/dev/null \
 			| awk -F/ '{ print length($NF) "\t" $0 }' \
 			| sort -n \
 			| cut -f2- \
@@ -46,7 +46,7 @@ if status is-interactive
 				--bind 'ctrl-h:change-nth(1)+clear-query' \
 			| awk -F'\t' '{ print $2 }')
 
-        if test -n "$result"
+		if test -n "$result"
 			commandline -i "$result "
 		end
 
@@ -54,7 +54,7 @@ if status is-interactive
 		set -U FUZZY_WHAT "f"
 	end
 
-    # --------------------------------------------------------
+	# --------------------------------------------------------
 	# Ctrl-G is the bridge between Talon and Fish.
 	#
 	# Talon sets FUZZY_WHERE and FUZZY_WHAT, then sends Ctrl-G.
