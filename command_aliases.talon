@@ -34,6 +34,9 @@ zip talon community:
 zip talon command line picker: 
     insert("z ~/.talon/user/talon-cmdline-picker/\n")
 
+zip config fish:
+    insert("z ~/.config/fish/\n")
+
 # Go back to previous folder.
 zip back:
     insert("z -\n")
