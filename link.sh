@@ -17,7 +17,7 @@ link() {
 
     # Create/update symlink
     ln -sfn "$source" "$target"
-    echo "Linked $target"
+    echo "Linked $target to $source"
 }
 
 # Fish shell
