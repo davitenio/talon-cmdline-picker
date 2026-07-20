@@ -22,5 +22,6 @@ link() {
 
 # Fish shell
 link "$PICKER/fish/hint_gen.py" "$HOME/.config/fish/scripts/hint_gen.py"
+link "$PICKER/fish/talon_commandline_picker.fish" "$HOME/.config/fish/conf.d/talon_commandline_picker.fish"
 
 echo "All dotfiles linked."
