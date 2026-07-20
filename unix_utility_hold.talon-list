@@ -17,6 +17,8 @@ code: code
 concat: cat
 curl
 cut
+danger remove: rm
+danger remove force: rm -f
 disk usage: du
 disk usage human: du -h
 echo
