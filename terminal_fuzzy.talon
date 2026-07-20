@@ -1,3 +1,8 @@
+# Invoke fish's complete and search.
+pick:
+    key(shift-tab)
+
+
 # ------------------------------------------------------------
 # Voice command: "fuzzy home", "fuzzy downloads", etc.
 #
