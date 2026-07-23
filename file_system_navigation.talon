@@ -46,6 +46,9 @@ zip Zettelkasten:
 zip Zettelkasten git | zip Zettelkasten dot git:
     insert("z ~/zettelkasten.git\n")
 
+zip exorcism | zip exorcism git | zip exorcism dot git:
+    insert("z ~/exercism.git\n")
+
 # Go back to previous folder
 zip back:
     insert("z -\n")
