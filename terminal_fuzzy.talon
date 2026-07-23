@@ -45,4 +45,4 @@ fuzzy {user.fuzzy_target}: user.fuzzy_find(fuzzy_target, "file")
 # In config.fish, FUZZY_WHAT="dir" causes fd to search for
 # directories only (--type d).
 # ------------------------------------------------------------
-dear {user.fuzzy_target}: user.fuzzy_find(fuzzy_target, "dir") 
+dear {user.fuzzy_target}: user.fuzzy_find(fuzzy_target, "dir")
