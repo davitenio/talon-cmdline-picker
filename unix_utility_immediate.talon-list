@@ -1,6 +1,8 @@
 list: user.unix_utility_immediate
 -
 
+# These commands are executed immediately. That is, they are pasted
+# into the command line and then Talon automatically presses Enter.
 brew update
 brew upgrade
 dig
@@ -9,8 +11,9 @@ disk free: df
 harp top: htop
 I D user: id -u
 I D: id
+lisa now: ls
 lisa dot dot | lisa double dot: ls ..
-lisa li: ls -l
+lisa li now: ls -l
 lisa triple dot: ls ../..
 open dot: open .
 who
