@@ -27,17 +27,26 @@ zip dotfiles:
     insert("z ~/dotfiles/\n")
 
 # Go to the talon community repository under ./talon/user
-zip talon community: 
+zip talon community:
     insert("z ~/.talon/user/community/\n")
 
+zip talon my config:
+    insert("z ~/.talon/user/my-config/\n")
+
 # Go to the talon commandline picker repository under ./talon/user
-zip talon command line picker: 
+zip talon command line picker:
     insert("z ~/.talon/user/talon-cmdline-picker/\n")
 
 zip config fish:
     insert("z ~/.config/fish/\n")
 
-# Go back to previous folder.
+zip Zettelkasten:
+    insert("z ~/zettelkasten-sync\n")
+
+zip Zettelkasten git | zip Zettelkasten dot git:
+    insert("z ~/zettelkasten.git\n")
+
+# Go back to previous folder
 zip back:
     insert("z -\n")
 
