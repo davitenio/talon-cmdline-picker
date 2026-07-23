@@ -1,3 +1,7 @@
+app: terminal
+os: mac
+-
+
 # Invoke fish's complete and search.
 pick:
     key(shift-tab)

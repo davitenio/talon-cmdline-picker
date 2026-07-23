@@ -1,3 +1,7 @@
+app: terminal
+os: mac
+-
+
 # ------------------------------------------------------------
 # Once the fzf picker is open (after "fuzzy downloads" etc.),
 # these two commands operate on the list:
