@@ -10,6 +10,18 @@ os: mac
 zip:
     insert("z ")
 
+# Go one folder up.
+zip up | zip up one | zip dot dot:
+    insert("z ..\n")
+
+# Go two folders up.
+zip up two | zip double up:
+    insert("z ../..\n")
+
+# Go three folders up.
+zip up three | zip triple up:
+    insert("z ../../..\n")
+
 # Go to home folder.
 zip home:
     insert("z ~\n")
