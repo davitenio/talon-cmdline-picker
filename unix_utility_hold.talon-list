@@ -6,12 +6,13 @@ ark: awk
 base sixty four decode: base64 -d
 base sixty four: base64
 brew install
-captain all: cp -a
+captain archive: cp -a
 captain: cp
-change mode recurse: chmod -R
 change mode: chmod
-change owner recurse: chown -R
+change mode recurse: chmod -R
+change mode executable: chmod +x
 change owner: chown
+change owner recurse: chown -R
 code new: code -n
 code: code
 concat: cat
@@ -32,6 +33,8 @@ grab: grep
 less
 link soft: ln -s
 link: ln
+Lisa: ls
+lisa li: ls -l
 M D five sum: md5sum
 make dear: mkdir
 man: man
