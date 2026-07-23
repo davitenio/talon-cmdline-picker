@@ -88,5 +88,5 @@ cancel:
     key(ctrl-c)
 
 # Get the last argument from the previous command.
-bring last:
+arg last:
     key(alt-.)
