@@ -52,12 +52,6 @@ zip talon command line picker:
 zip config fish:
     insert("z ~/.config/fish/\n")
 
-zip Zettelkasten:
-    insert("z ~/zettelkasten-sync\n")
-
-zip Zettelkasten git | zip Zettelkasten dot git:
-    insert("z ~/zettelkasten.git\n")
-
 zip exorcism | zip exorcism git | zip exorcism dot git:
     insert("z ~/exercism.git\n")
 
